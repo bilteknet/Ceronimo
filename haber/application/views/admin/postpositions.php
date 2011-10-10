@@ -1,0 +1,145 @@
+<div class="content-box"><!-- Start Content Box -->
+				
+				<div class="content-box-header">
+					
+					<h3>Yazı Yerleşimler</h3>
+					
+					<ul class="content-box-tabs">
+						<li><a href="#tab1" class="default-tab">Editör, Yazar</a></li> <!-- href must be unique and match the id of target div -->
+						<li><a href="#tab2" class="default-tab">Blogger</a></li>
+					</ul>
+					
+					<div class="clear"></div>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+			   
+					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+					
+						<div class="notification attention png_bg">
+							<a href="#" class="close"><?php echo  html::image('static/resources/images/icons/cross_grey_small.png'); ?></a>
+							<div>Yazı yerleşimlerinizi izin verilen alanlara göre değiştirebilirsiniz.</div>
+						</div>
+						
+						<table>
+							
+							<thead>
+                                                            
+								<tr>
+								   <th><input class="check-all" type="checkbox" /></th>
+								   <th>#id</th>
+								   <th>Başlık</th>
+								   <th>Alt Başlık</th>
+								   <th>Durum</th>
+								   <th>Yoruma Kapalı</th>
+								</tr>
+								
+							</thead>
+						 
+							<tfoot>
+								<tr>
+									<td colspan="6">
+										
+										
+										
+										<div class="clear"></div>
+									</td>
+								</tr>
+							</tfoot>
+						 
+							<tbody>
+                                                            <?php foreach ($profs_posts as $posts): ?>
+                                                           
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td><?php echo $posts->post_id; ?></td>
+									<td><a href="#" title="title"><?php echo $posts->title; ?></a></td>
+									<td><?php echo $posts->subtitle; ?></td>
+                                                                        <?php if ($posts->status == 1): ?>
+									<td>Yayında</td>
+                                                                        <?php else : ?>
+                                                                        <td>Beklemede</td>
+                                                                        <?php endif;?>
+                                                                        <?php if($posts->comment_status == 1) : ?>
+                                                                        <td>Yoruma Açık</td>
+                                                                        <?php else : ?>
+                                                                        <td>Yoruma Kapalı</td>
+                                                                        <?php endif; ?>
+									<td>
+										<!-- Icons -->
+										 <a href="<?php echo url::site('Admin/admin/changepostposition/'.$posts->post_id.'/1'); ?>" title="Manşet Yap"><?php echo  html::image('static/resources/images/icons/hammer_screwdriver.png'); ?></a>
+										 <a href="<?php echo url::site('Admin/admin/changepostposition/'.$posts->post_id.'/2');?>" title="Manşet Altı Haberi Yap"><?php echo  html::image('static/resources/images/icons/hammer_screwdriver.png'); ?></a> 
+									</td>
+								</tr>
+								<?php endforeach; ?>
+							</tbody>
+							
+						</table>
+						
+					</div> <!-- End #tab1 --> 
+                                        <div class="tab-content" id="tab2"> <!-- This is the target div. id must match the href of this div's tab -->
+					
+						<div class="notification attention png_bg">
+							<a href="#" class="close"><?php echo  html::image('static/resources/images/icons/cross_grey_small.png'); ?></a>
+							<div>Yazı yerleşimlerinizi izin verilen alanlara göre değiştirebilirsiniz.</div>
+						</div>
+						
+						<table>
+							
+							<thead>
+                                                            
+								<tr>
+								   <th><input class="check-all" type="checkbox" /></th>
+								   <th>#id</th>
+								   <th>Başlık</th>
+								   <th>Alt Başlık</th>
+								   <th>Durum</th>
+								   <th>Yoruma Kapalı</th>
+								</tr>
+								
+							</thead>
+						 
+							<tfoot>
+								<tr>
+									<td colspan="6">
+										
+										
+										
+										<div class="clear"></div>
+									</td>
+								</tr>
+							</tfoot>
+						 
+							<tbody>
+                                                            <?php foreach ($blogger_posts as $posts): ?>
+                                                           
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td><?php echo $posts->post_id; ?></td>
+									<td><a href="#" title="title"><?php echo $posts->title; ?></a></td>
+									<td><?php echo $posts->subtitle; ?></td>
+                                                                        <?php if ($posts->status == 1): ?>
+									<td>Yayında</td>
+                                                                        <?php else : ?>
+                                                                        <td>Beklemede</td>
+                                                                        <?php endif;?>
+                                                                        <?php if($posts->comment_status == 1) : ?>
+                                                                        <td>Yoruma Açık</td>
+                                                                        <?php else : ?>
+                                                                        <td>Yoruma Kapalı</td>
+                                                                        <?php endif; ?>
+									<td>
+										<!-- Icons -->
+										 
+										 <a href="<?php echo url::site('Admin/admin/changepostposition/'.$posts->post_id.'/3');?>" title="Manşet Altı Haberi Yap"><?php echo  html::image('static/resources/images/icons/hammer_screwdriver.png'); ?></a> 
+									</td>
+								</tr>
+								<?php endforeach; ?>
+							</tbody>
+							
+						</table>
+						
+					</div> <!-- End #tab1 -->
+                                </div>
+</div>

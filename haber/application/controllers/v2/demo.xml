@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order date = "" amount = "" status = "">
+    <products>
+        <product>
+            <code>Ürün Kodu</code>
+            <name>Ürün İsmi</name>
+            <quantity>miktar</quantity>
+        </product>
+        
+        <product>
+            <code>Ürün Kodu</code>
+            <name>Ürün İsmi</name>
+            <quantity>miktar</quantity>
+        </product>
+        
+        <product>
+            <code>Ürün Kodu</code>
+            <name>Ürün İsmi</name>
+            <quantity>miktar</quantity>
+        </product>
+    </products>
+    <suppliers>
+        <supplier>
+            <name>Tedarikçi Adı</name>
+            <address>T. Adres</address>
+            <country>T. İlçe</country>
+            <tel>T. Telefon</tel>
+            <state>T. il kodu</state>
+        </supplier>
+        <supplier>
+            <name>Tedarikçi Adı</name>
+            <address>T. Adres</address>
+            <country>T. İlçe</country>
+            <tel>T. Telefon</tel>
+            <state>T. il kodu</state>
+        </supplier>
+        <supplier>
+            <name>Tedarikçi Adı</name>
+            <address>T. Adres</address>
+            <country>T. İlçe</country>
+            <tel>T. Telefon</tel>
+            <state>T. il kodu</state>
+        </supplier>
+    </suppliers>
+    <invoice>
+        <name>Müşteri Adı</name>
+        <address>M. Adres</address>
+        <country>M. İlçe</country>
+        <identity>T.C Kimlik veya vergi no</identity>
+        <state>İl Kodu</state>
+    </invoice>
+</order>

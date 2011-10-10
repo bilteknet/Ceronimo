@@ -1,0 +1,8 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2011-09-23 09:12:47 +03:00 --- error: Uncaught PHP Error: Missing argument 1 for Post_Model::get_bloggers_posts(), called in /srv/www/ceronimo.com/public_html/haber/application/controllers/home.php on line 177 and defined in file application/models/post.php on line 108
+2011-09-23 09:13:51 +03:00 --- error: Uncaught PHP Error: Missing argument 1 for Post_Model::get_bloggers_posts(), called in /srv/www/ceronimo.com/public_html/haber/application/controllers/home.php on line 177 and defined in file application/models/post.php on line 108
+2011-09-23 15:30:18 +03:00 --- error: Uncaught PHP Error: Missing argument 1 for Post_Model::get_bloggers_posts(), called in /srv/www/ceronimo.com/public_html/haber/application/controllers/home.php on line 177 and defined in file application/models/post.php on line 108
+2011-09-23 16:25:39 +03:00 --- error: Uncaught PHP Error: Missing argument 1 for Post_Model::get_bloggers_posts(), called in /srv/www/ceronimo.com/public_html/haber/application/controllers/home.php on line 177 and defined in file application/models/post.php on line 108
+2011-09-23 18:03:00 +03:00 --- error: Uncaught PHP Error: Missing argument 1 for Post_Model::get_bloggers_posts(), called in /srv/www/ceronimo.com/public_html/haber/application/controllers/home.php on line 177 and defined in file application/models/post.php on line 108
+2011-09-23 21:54:17 +03:00 --- error: Uncaught PHP Error: Missing argument 1 for Post_Model::get_bloggers_posts(), called in /srv/www/ceronimo.com/public_html/haber/application/controllers/home.php on line 177 and defined in file application/models/post.php on line 108
